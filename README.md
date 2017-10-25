@@ -16,6 +16,11 @@
 
 ![效果图](https://github.com/quietUncle/vartrans/blob/master/vartrans.gif)
 
+版本日志:
+        
+          1.0 支持中文转变量
+          1.1 常量命名修改为下划线
+          1.2 支持多结果展示 
 
 使用方法:	
 
