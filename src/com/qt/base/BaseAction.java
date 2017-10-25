@@ -1,11 +1,13 @@
 package com.qt.base;
 
+import a.d.C;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.intellij.openapi.actionSystem.*;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorModificationUtil;
+import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.openapi.ui.popup.ListPopup;
 import com.intellij.openapi.util.text.StringUtil;
@@ -26,11 +28,12 @@ public abstract class BaseAction extends AnAction implements VarParse {
     private static JsonParser parser = new JsonParser();
     private static Gson gson = new Gson();
     private String TAG = "var_result_pop";
+    private static Config.State STATE= Config.getInstance().getState();
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
-        String defaultKey = Constants.DEFAULT_API_KEY_VAL;
-        String defaultSercet = Constants.DEFAULT_SERCET_KEY_VAL;
-        translate(anActionEvent, defaultSercet, defaultKey);
+        String defaultKey = STATE.API_KEY;
+        String defaultSecret = STATE.API_SECRET;
+        translate(anActionEvent, defaultSecret, defaultKey);
     }
 
 
@@ -50,8 +53,11 @@ public abstract class BaseAction extends AnAction implements VarParse {
 
                     String result = HttpClientPool.getHttpClient().get(Constants.genUrl(sercet, apiKey, text));
                     ApiResult data = gson.fromJson(result, ApiResult.class);
-                    showPop(e, editor, resolveResult(text, data));
-
+                    if(data.getErrorCode().equals("202")){
+                        Messages.showErrorDialog("请确认setting里面的ApiKey和ApiSecret是否正确","Api验证错误");
+                    }else{
+                        showPop(e, editor, resolveResult(text, data));
+                    }
                 } catch (Exception exception) {
                     onParseError(exception);
 //                    if(State.instance().isDebug()){

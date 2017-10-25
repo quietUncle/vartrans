@@ -14,13 +14,13 @@ import java.awt.*;
  * Created by KADO on 15/12/17.
  */
 @State(
-    name = "var_trans",
-    storages = {
-            @Storage(
-                    id = "varTrans",
-                    file = "$APP_CONFIG$/var_trans_mode_setting.xml"
-            )
-    }
+        name = "var_trans",
+        storages = {
+                @Storage(
+                        id = "varTrans",
+                        file = "$APP_CONFIG$/var_trans_mode_setting.xml"
+                )
+        }
 )
 public class Config implements PersistentStateComponent<Config.State> {
 
@@ -44,8 +44,9 @@ public class Config implements PersistentStateComponent<Config.State> {
     }
 
     public void defaultInitState() {
-
-        state.IS_POP=true;
+        state.API_KEY = "108770214d7b90c8";
+        state.API_SECRET = "oRTxCoNRm2DKQUDbI7ajiD5p5QPuNUf0";
+        state.IS_POP = true;
     }
 
     public static Config getInstance() {
@@ -56,9 +57,11 @@ public class Config implements PersistentStateComponent<Config.State> {
         /**
          * 是否显示列表
          */
-       public boolean IS_POP=true;
-
-
+        public boolean IS_POP = true;
+        public String API_KEY= "108770214d7b90c8";
+        public String API_SECRET = "oRTxCoNRm2DKQUDbI7ajiD5p5QPuNUf0";
+        public String DEFAULT_API_SECRET="oRTxCoNRm2DKQUDbI7ajiD5p5QPuNUf0";
+        public String DEFAULT_API_KEY="108770214d7b90c8";
     }
 
 

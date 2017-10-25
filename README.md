@@ -24,13 +24,15 @@
           1.0 支持中文转变量
           1.1 常量命名修改为下划线
           1.2 支持多结果展示 
+          1.3 增加自定义有道key
+
 
 使用方法:	
 
 		1.下载项目中的var.jar
 		2.google一下android studio 插件导入.
 		3.安装成功之后,在android studio 状态栏 windows下,有个varTrans菜单,里面有对应快捷键
-
+        4.默认使用作者提供的key,每小时1000次,所有用户公用,建议用户自己去申请一个,设置位置在 other settings ->varTrans
 再奉上[GitHub地址](https://github.com/quietUncle/vartrans)
 
 
