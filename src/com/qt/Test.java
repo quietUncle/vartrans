@@ -6,5 +6,5 @@ public class Test {
     private String helloWorld;    //中文转小驼峰
     private String HELLO_WORLD;    //中文转常量
 
- 
+
 }

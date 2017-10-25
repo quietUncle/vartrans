@@ -16,6 +16,9 @@
 
 ![效果图](https://github.com/quietUncle/vartrans/blob/master/vartrans.gif)
 
+
+![效果图](https://github.com/quietUncle/vartrans/blob/master/vartrans_pop.gif)
+
 版本日志:
         
           1.0 支持中文转变量
