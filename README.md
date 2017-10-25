@@ -1,4 +1,3 @@
-# vartrans
 #Android Studio Plugin -VarTrans(中文转变量插件)
 
 
@@ -17,6 +16,11 @@
 
 ![效果图](https://github.com/quietUncle/vartrans/blob/master/vartrans.gif)
 
+
+使用方法:	
+
+		1.下载项目中的var.jar
+		2.google一下android studio 插件导入.
 
 再奉上[GitHub地址](https://github.com/quietUncle/vartrans)
 
