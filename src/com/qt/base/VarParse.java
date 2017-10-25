@@ -12,4 +12,6 @@ public interface VarParse {
 
     String parseResult(String result[]) throws Exception;
 
+    String name();
+
 }

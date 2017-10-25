@@ -46,7 +46,7 @@ public class HttpClientPool {
     }
 
     public String get(String url) throws Exception {
-//        System.out.println(url);
+        System.out.println(url);
         HttpGet httpGet = new HttpGet(url);
         return getResponseContent(url,httpGet);
     }

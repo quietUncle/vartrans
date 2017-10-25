@@ -29,4 +29,8 @@ public class SmallHumpAction extends BaseAction {
         }
         return sb.toString();
     }
+    @Override
+    public String name() {
+        return "小驼峰";
+    }
 }
