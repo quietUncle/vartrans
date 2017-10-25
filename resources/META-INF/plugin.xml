@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.qt.var</id>
   <name>varTrans</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor  url="https://github.com/quietUncle/vartrans">安静大叔</vendor>
 
   <description>中文花式转变量</description>
@@ -9,6 +9,7 @@
   <change-notes><![CDATA[
      1.0 支持中文转变量<br>
      1.1 常量命名修改为下划线
+     1.2 支持多结果展示
     ]]>
   </change-notes>
 
