@@ -2,7 +2,7 @@
   <id>com.qt.var</id>
   <name>varTrans</name>
   <version>1.1</version>
-  <vendor email="nothing" url="nothing">安静大叔</vendor>
+  <vendor  url="https://github.com/quietUncle/vartrans">安静大叔</vendor>
 
   <description>中文花式转变量</description>
 

@@ -53,7 +53,7 @@ public abstract class BaseAction extends AnAction implements VarParse {
                         @Override
                         public void run() {
                             if(t.equals("安静大叔")){
-                                EditorModificationUtil.insertStringAtCaret(editor,"QuietUncle_Cool", true);
+                                EditorModificationUtil.insertStringAtCaret(editor,"https://github.com/quietUncle/vartrans", true);
                             }else{
                                 EditorModificationUtil.insertStringAtCaret(editor, sb.toString(), true);
                             }
